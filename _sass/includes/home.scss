@@ -1,0 +1,157 @@
+//Section Home banner
+.home-banner{    
+    background:url("/assets/images/laptop-on-desk.png") no-repeat center right 20%, url("/assets/images/home-bg.svg") no-repeat bottom left;     
+    padding: 150px 0 150px;
+    background-size:50% , 100%;
+    position: relative;
+    z-index: 1;
+    @media #{$laptop}{			
+        background:url("/assets/images/laptop-on-desk.png") no-repeat center right 10%, url("/assets/images/home-bg.svg") no-repeat top left;
+        background-size:60% , 100%;
+    }
+    @media #{$md}{			
+        background:  url("/assets/images/home-bg.svg") no-repeat top left;
+        background-size:  125%;
+        padding: 50px 0 50px;
+        .banner-left-text{
+            padding: 100px 0;
+            .sub-title{
+                color: $white;
+                font-size:$font-16;
+                font-weight: $type-regular;
+                font-family: $font-inter;
+                text-transform: $text-uppercase;
+            }
+            h1{
+                color: $theme-color;
+                font-size:35px;
+                font-weight: $type-bold;
+                font-family: $font-inter;
+            }
+            p{
+                width: 80%;
+                color: $white;
+                font-size:$font-16;            
+                font-weight:$type-regular ;
+                font-family: $font-work-sans;
+            }
+        }
+    }    
+    @media #{$xs}{			
+        background:  url("/assets/images/home-bg.svg") no-repeat top left;
+        background-size:  200%;
+        padding: 50px 0 50px;
+        .banner-left-text{
+            padding: 100px 0;
+            .sub-title{ 
+                font-size:$font-14 !important;               
+            }
+            h1{ 
+                font-size:35px !important;
+            }
+            p{
+                width: 100% !important;
+                font-size:$font-14 !important;  
+            }
+        }
+    }
+    .banner-left-text{
+        padding: 100px 0;
+        .sub-title{
+            color: $white;
+            font-size:$font-20;
+            font-weight: $type-regular;
+            font-family: $font-inter;
+            text-transform: $text-uppercase;
+        }
+        h1{
+            color: $theme-color;
+            font-size:68px;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+        }
+        p{
+            width: 80%;
+            color: $white;
+            font-size:$font-20;            
+            font-weight:$type-regular ;
+            font-family: $font-work-sans;
+        }
+    }
+}
+
+//Section Companies
+.companies{
+    margin-top: -300px;
+    padding-top: 350px;
+    padding-bottom: 50px;
+    background:linear-gradient(113deg, #102559 0%, #00599A 100%) no-repeat;
+    @media #{$laptop}{			        
+        margin-top: -300px;
+        padding-top: 300px;    
+    }
+    @media #{$md}{			        
+        margin-top: -300px;
+        padding-top: 280px;   
+        .c-logo-list{
+            display: block !important; 
+            p{
+                width: 100% !important;
+                color: $white;
+                padding-right: 15px;
+            } 
+        }
+    }
+    @media #{$xs}{	
+        margin-top: -300px;
+        padding-top: 280px;  
+        .c-logo-list{
+            display: block !important; 
+            p{
+                width: 100% !important;
+                color: $white;
+                padding-right: 15px;
+            } 
+            ul{
+                display: block !important;
+                li{
+                    width: calc((100vw / 2) - 25px) !important;
+                    float: left;
+                    height: 100px;
+                    margin-bottom: 10px;
+                     
+                }
+            }
+        }
+    }
+    .c-logo-list{
+        display: flex;
+        align-items: center;
+        p{
+            width: 18%;
+            color: $white;
+            padding-right: 15px;
+        }
+        ul{
+            display: flex;
+            li{
+                width: calc(100% / 4);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color:rgba(255,255,255,0.10);
+                border: 1px solid #77B4D4;
+                @include border-radius(26px);
+                padding: 10px 25px;
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+                a{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

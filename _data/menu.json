@@ -1,0 +1,24 @@
+{
+    "pages":[
+        {
+            "name" : "Home",
+            "url":"/",
+            "title":"Home page"
+        },
+        {
+            "name" : "Services",
+            "url":"/services",
+            "title":"Service page"
+        },
+        {
+            "name" : "Technology",
+            "url":"/technology",
+            "title":"Technology page"
+        },
+        {
+            "name" : "Casestudy",
+            "url":"/casestudy",
+            "title":"Casestudy page"
+        }
+    ]
+}

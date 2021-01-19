@@ -1,0 +1,39 @@
+body{
+    font-family:$font-work-sans;
+}
+ul,li{
+    padding: 0;
+    list-style: none;
+}
+.section{
+    padding: 80px 0 80px;
+}
+.btn{
+    font-family: $font-inter !important;
+    font-weight: $type-semi-bold !important;
+    font-size: $font-16 !important;
+    padding: 10px 25px !important; 
+    @include box-shadow(0px 3px 6px rgba(0,0,0,0.2));
+    &.btn-primary{
+        background:linear-gradient(360deg, #071539 0%, #0A3770 35%, #00599A 100%) no-repeat;
+        text-transform: $text-uppercase;
+        border: 0;
+        @include border-radius(50px);
+        transition: all 0.3s linear;
+        &:hover,&:focus{            
+            border: 0;
+            background:linear-gradient(180deg, #071539 0%, #0A3770 35%, #00599A 100%) no-repeat;
+            transition: all 0.3s linear;
+        }
+    }
+    &.btn-warning{
+        background:linear-gradient(0deg, #D27326 0%, #F98910 27%, #FFDD00 100%) no-repeat;
+        text-transform: $text-uppercase;
+        border: 0;
+        @include border-radius(50px);
+        
+        &:hover,&:focus,&:link,&:active,&.active{
+            box-shadow: none;
+        }
+    }
+}

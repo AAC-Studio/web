@@ -1,0 +1,48 @@
+
+
+// Font Family
+$font-inter: 'Inter', sans-serif;
+$font-work-sans: 'Work Sans', sans-serif;
+
+// Font Weight
+$type-regular: 400;
+$type-medium: 500;
+$type-semi-bold: 600;
+$type-bold: 700;
+
+// Font Weight
+$font-14:14px;
+$font-16: 16px;
+$font-20: 20px; 
+
+// Text Transform
+$text-uppercase: uppercase; 
+
+// Colors ---------------
+$white: #fff;
+$black: #222;
+$gray: #f7f7fd;
+
+// Theme Color
+$theme-color:#2D629E;
+$theme-secondary:#FEB921;
+//Body Color
+$body-color: #666e82;
+// Border Color
+$border-color: #eceff8;
+// Heading Color
+$heading-color: #2e3d62;
+// Soft color
+$black-soft: #7e7e7e;
+// menu color
+$menu-color:#46484B;
+
+// Responsive Variables
+$desktop: 'only screen and (min-width: 1400px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+
