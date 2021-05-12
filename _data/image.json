@@ -1,0 +1,20 @@
+{
+    "companylist":[
+        {
+           "url":"assets/images/01.png",
+            "title":"Company 1"
+        },
+        {
+            "url":"assets/images/02.png",
+            "title":"Company 2"
+        },
+        {
+            "url":"assets/images/03.png",
+            "title":"Company 3"
+        },
+        {
+            "url":"assets/images/04.png",
+            "title":"Company 4"
+        }
+    ]
+}

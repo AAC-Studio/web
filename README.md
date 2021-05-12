@@ -7,3 +7,5 @@ This is my portfolio website
 
 # Run jekyll in command with live reload
 1.bundle exec jekyll serve --livereload
+
+# bundle add webrick

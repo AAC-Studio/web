@@ -52,7 +52,11 @@
           animation-delay: $value;
 }
 
-
+@mixin display-flex($value1,$value2,$value3) {
+   display: $value1;
+   align-items: $value2;
+   justify-content: $value3;           
+ }
 
 @mixin box-shadow($value) {
   -webkit-box-shadow: $value;

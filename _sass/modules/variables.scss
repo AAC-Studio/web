@@ -25,6 +25,7 @@ $gray: #f7f7fd;
 
 // Theme Color
 $theme-color:#2D629E;
+$theme-para:#555555;
 $theme-secondary:#FEB921;
 //Body Color
 $body-color: #666e82;
@@ -37,7 +38,13 @@ $black-soft: #7e7e7e;
 // menu color
 $menu-color:#46484B;
 
+// Services bg color
+$services-bg-color:#F2F7FB;
+
+
 // Responsive Variables
+$largescreen: 'only screen and (min-width: 1536px)';
+$xxl: 'only screen and (min-width: 1399px) and (max-width: 1535px)';
 $desktop: 'only screen and (min-width: 1400px)';
 $laptop: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
 $lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';

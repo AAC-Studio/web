@@ -30,10 +30,118 @@ ul,li{
         background:linear-gradient(0deg, #D27326 0%, #F98910 27%, #FFDD00 100%) no-repeat;
         text-transform: $text-uppercase;
         border: 0;
+        color:$white;
         @include border-radius(50px);
         
         &:hover,&:focus,&:link,&:active,&.active{
             box-shadow: none;
         }
+    }
+    &.btn-min-w{
+        min-width: 150px;
+    }
+}
+.sec-title{
+    padding-bottom: 20px;
+    h2{
+        color: $theme-color;
+        font-size:55px;
+        font-weight: $type-bold;
+        font-family:$font-inter;
+        padding:0 0 15px;
+        @media #{$xs}{
+            font-size:35px;
+        }
+
+    }
+    .sub-title{
+        color: $theme-secondary;
+        text-transform: $text-uppercase;
+        font-size:$font-20;
+        font-weight: $type-semi-bold;
+    }
+    .lines{
+        display: flex;
+       
+        width: 40%;
+        span{
+            display: block;
+            background-color: $theme-secondary;
+            height:5px;
+            border-radius:10px;
+            
+            &:first-child{
+                width: 100%;
+            }            
+            &:nth-child(2){
+                width: 50%;
+            }            
+            &:nth-child(3){
+                width: 25%;
+            }            
+            &:last-child{
+                width: 15%;
+            }   
+            
+            &:not(:last-child){
+                margin-right: 15px;
+            }   
+        }
+    }
+    p{
+        padding: 25px 0;
+        color: $theme-para;
+        font-family: $font-work-sans;  
+    }
+    &.center{
+        text-align: center;
+        .lines{
+            margin: 0 auto;
+        }
+    }
+
+}
+.sec-title-type-2{
+    color: $theme-color;
+    font-size: 36px;
+    font-family: $font-inter;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    @media #{$xs}{
+        font-size:28px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100px;
+        background: $theme-secondary;
+        @include border-radius(10px);        
+    }
+}
+/*  scroll css section here*/
+// .scrolltop .icon {
+//     font-size: 30px;
+//     text-align: center;
+//     transform: rotate(-45deg);
+//     margin-top: 10px;
+// }
+
+.scrolltop {
+    position: fixed;
+    bottom: 0px;
+    right: 40px;
+    // height: 50px;
+    // border-radius: 50%;
+    // background-color: #fff;
+    display: none;
+    z-index: 5;
+    cursor: pointer;
+    img{
+        
+        width: 100px;
     }
 }

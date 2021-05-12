@@ -1,157 +1,719 @@
 //Section Home banner
-.home-banner{    
-    background:url("/assets/images/laptop-on-desk.png") no-repeat center right 20%, url("/assets/images/home-bg.svg") no-repeat bottom left;     
-    padding: 150px 0 150px;
-    background-size:50% , 100%;
+.home-banner {
+    background: url("../images/laptop-on-desk.png") no-repeat center right 20%, url("../images/home-bg.svg") no-repeat bottom left;
+
+    background-size: 50%, 100%;
     position: relative;
     z-index: 1;
-    @media #{$laptop}{			
-        background:url("/assets/images/laptop-on-desk.png") no-repeat center right 10%, url("/assets/images/home-bg.svg") no-repeat top left;
-        background-size:60% , 100%;
+
+    .container {
+        padding: 150px 0 150px;
+        @media #{$md} {
+            padding:120px 0 150px
+        }
     }
-    @media #{$md}{			
-        background:  url("/assets/images/home-bg.svg") no-repeat top left;
-        background-size:  125%;
+
+    #parallax {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: url("../images/shape-1.png") no-repeat, url("../images/shape-2.png"), url("../images/shape-3.png");
+        background-size: 200px, 200px, 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 50% 50%;
+        @media #{$md} {
+            display: none;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+        .shape-1 {
+            position: absolute;
+            top: 10%;
+            left: 15%;
+
+        }
+
+        .shape-2 {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+        }
+
+        .shape-3 {
+            position: absolute;
+            bottom: 5%;
+            left: 30%;
+        }
+    }
+
+    @media #{$laptop} {
+        background: url("../images/laptop-on-desk.png") no-repeat center right 10%, url("../images/home-bg.svg") no-repeat top left;
+        background-size: 60%, 100%;
+    }
+
+    @media #{$md} {
+        background: url("../images/home-bg.svg") no-repeat top left;
+        background-size: 125%;
         padding: 50px 0 50px;
-        .banner-left-text{
+
+        .banner-left-text {
             padding: 100px 0;
-            .sub-title{
+            @media #{$md} {
+                padding: 0 !important;
+            }
+            .sub-title {
                 color: $white;
-                font-size:$font-16;
+                font-size: $font-16;
                 font-weight: $type-regular;
                 font-family: $font-inter;
                 text-transform: $text-uppercase;
             }
-            h1{
+
+            h1 {
                 color: $theme-color;
-                font-size:35px;
+                font-size: 35px;
                 font-weight: $type-bold;
                 font-family: $font-inter;
             }
-            p{
+
+            p {
                 width: 80%;
                 color: $white;
-                font-size:$font-16;            
-                font-weight:$type-regular ;
+                font-size: $font-16;
+                font-weight: $type-regular;
                 font-family: $font-work-sans;
             }
         }
-    }    
-    @media #{$xs}{			
-        background:  url("/assets/images/home-bg.svg") no-repeat top left;
-        background-size:  200%;
+    }
+
+    @media #{$xs} {
+        background: url("../images/home-bg.svg") no-repeat top left;
+        background-size: 200%;
         padding: 50px 0 50px;
-        .banner-left-text{
+
+        .banner-left-text {
             padding: 100px 0;
-            .sub-title{ 
-                font-size:$font-14 !important;               
+
+            .sub-title {
+                font-size: $font-14 !important;
             }
-            h1{ 
-                font-size:35px !important;
+
+            h1 {
+                font-size: 35px !important;
             }
-            p{
+
+            p {
                 width: 100% !important;
-                font-size:$font-14 !important;  
+                font-size: $font-14 !important;
             }
         }
     }
-    .banner-left-text{
+
+    .banner-left-text {
         padding: 100px 0;
-        .sub-title{
+
+        .sub-title {
             color: $white;
-            font-size:$font-20;
+            font-size: $font-20;
             font-weight: $type-regular;
             font-family: $font-inter;
             text-transform: $text-uppercase;
         }
-        h1{
+
+        h1 {
             color: $theme-color;
-            font-size:68px;
+            font-size: 68px;
             font-weight: $type-bold;
             font-family: $font-inter;
         }
-        p{
+
+        p {
             width: 80%;
             color: $white;
-            font-size:$font-20;            
-            font-weight:$type-regular ;
+            font-size: $font-20;
+            font-weight: $type-regular;
             font-family: $font-work-sans;
         }
     }
 }
 
 //Section Companies
-.companies{
+.companies {
     margin-top: -300px;
     padding-top: 350px;
     padding-bottom: 50px;
-    background:linear-gradient(113deg, #102559 0%, #00599A 100%) no-repeat;
-    @media #{$laptop}{			        
-        margin-top: -300px;
-        padding-top: 300px;    
+    background: url("../images/round-line.png") no-repeat center right 100px, linear-gradient(113deg, #102559 0%, #00599A 100%) no-repeat;
+    @media #{$xxl} {
+        background-size: 15%,100%;
     }
-    @media #{$md}{			        
+    @media #{$laptop} {
         margin-top: -300px;
-        padding-top: 280px;   
-        .c-logo-list{
-            display: block !important; 
-            p{
+        padding-top: 300px;
+        background-size: 15%,100%;
+    }
+
+    @media #{$md} {
+        margin-top: -370px;
+        padding-top: 280px;
+        background:linear-gradient(113deg, #102559 0%, #00599A 100%) no-repeat ;
+        .c-logo-list {
+            display: block !important;
+
+            p {
                 width: 100% !important;
                 color: $white;
                 padding-right: 15px;
-            } 
+            }
         }
     }
-    @media #{$xs}{	
+
+    @media #{$xs} {
         margin-top: -300px;
-        padding-top: 280px;  
-        .c-logo-list{
-            display: block !important; 
-            p{
+        padding-top: 280px;
+
+        .c-logo-list {
+            display: block !important;
+
+            p {
                 width: 100% !important;
                 color: $white;
                 padding-right: 15px;
-            } 
-            ul{
+            }
+
+            ul {
                 display: block !important;
-                li{
+
+                li {
                     width: calc((100vw / 2) - 25px) !important;
                     float: left;
                     height: 100px;
                     margin-bottom: 10px;
-                     
+
                 }
             }
         }
     }
-    .c-logo-list{
+
+    .c-logo-list {
         display: flex;
         align-items: center;
-        p{
+
+        p {
             width: 18%;
             color: $white;
             padding-right: 15px;
         }
-        ul{
+
+        ul {
             display: flex;
-            li{
+
+            li {
                 width: calc(100% / 4);
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color:rgba(255,255,255,0.10);
+                background-color: rgba(255, 255, 255, 0.10);
                 border: 1px solid #77B4D4;
                 @include border-radius(26px);
                 padding: 10px 25px;
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     margin-right: 10px;
                 }
-                a{
-                    img{
+
+                a {
+                    img {
                         max-width: 100%;
                     }
                 }
             }
         }
     }
+}
+
+//Section Services
+.services {
+    background: url("../images/service-border.png") no-repeat center top 300px, url("../images/service-bottom.svg") no-repeat center bottom, url("../images/qube.png") no-repeat top 20px left 50px $services-bg-color;
+    background-size: 600px, 101%, 20%;
+    padding-bottom: 200px !important;
+
+    .service-1 {
+        background: url("../images/service-1.png") no-repeat top right 20%;
+        background-size: 850px;
+        padding-bottom: 80px;
+    }
+
+    .service-2 {
+        background: url("../images/service-2.png") no-repeat top -38px left 20%;
+        background-size: 42%;
+        padding-bottom: 100px;
+    }
+
+    .service-3 {
+        background: url("../images/service-3.png") no-repeat top right 20%;
+        background-size: 43%;
+        padding-bottom: 80px;
+    }
+
+    @media #{$xxl} {
+        .service-1 {
+            background: url("../images/service-1.png") no-repeat bottom 100% right 20%;
+            background-size: auto;
+            background-size: 700px;
+            padding: 36px 0 0;
+        }
+
+        .service-2 {
+            background: url("../images/service-2.png") no-repeat top -50px left 0;
+            background-size: 860px;
+        }
+
+        .service-3 {
+            background: url("../images/service-3.png") no-repeat top right 15%;
+            background-size: 730px
+        }
+    }
+
+    @media #{$laptop} {
+        background-size: 550px, 101%, 17%;
+        .service-1 {
+            background: url("../images/service-1.png") no-repeat bottom -50% right 10%;
+            background-size: auto;
+            background-size: 730px;
+            padding: 36px 0 0;
+        }
+
+        .service-2 {
+            background: url("../images/service-2.png") no-repeat top -30px left -90px;
+            background-size: 850px;
+        }
+
+        .service-3 {
+            background: url("../images/service-3.png") no-repeat top right 50px;
+            background-size: 750px
+        }
+    }
+
+    @media #{$md,$xs} {
+        background: url("../images/service-bottom.svg") no-repeat center bottom 0px $services-bg-color;
+        background-size: 102%;
+        padding-bottom: 100px !important;
+
+        .service {
+            margin-top: 50px !important;
+        }
+
+        .service-1,
+        .service-2,
+        .service-3 {
+            background: none;
+            background-size: auto;
+            background-size: 730px;
+            padding: 0;
+        }
+    }
+
+    .service {
+        margin-top: 100px;
+
+        h3 {
+            font-size: 37px;
+            color: $theme-color;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+
+            @media #{$xs} {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            padding: 20px 0;
+            color: $theme-para;
+            font-family: $font-work-sans;
+        }
+    }
+}
+
+//Section Technologies
+.technologies {
+    background: linear-gradient(0deg, #ECF0F3 0%, #ECF0F3 75%, #FFFFFF 100%);
+    position: relative;
+
+    &::before {
+        // content: "";
+        // position: absolute;
+        // left: 0;
+        // top: 0;
+        // width: 100px;
+        // height: 100%;
+        // background: url("/../images/flying-man.png") no-repeat left center / cover;                    
+        // -webkit-animation: mover 1s infinite  alternate;
+        // animation: mover 1s infinite  alternate;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -8%;
+        width: 25%;
+        height: 20%;
+        background: url("../images/flying-man.png") no-repeat right top;
+        background-size: 100%;
+        @include animation(mover 1s infinite alternate);
+
+        @media #{$xxl} {
+            left: -10%;
+            top: -8%;
+        }
+        @media #{$laptop} {
+            left: -10%;
+            top: -8%;
+        }        
+        @media #{$md} {
+         display: none;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 5%;
+        top: -6%;
+        width: 15%;
+        height: 10%;
+        background: url("../images/half-round.png") no-repeat right top;
+        background-size: 90%;
+        @media #{$xxl} {            
+            top: -8%;
+        }
+        @media #{$laptop} {            
+            top: -6%;
+        }
+        @media #{$md} {
+            display: none;
+           }
+    }
+
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+
+    .items-list {
+        margin: 0;
+        display: flex;
+        justify-content: end;
+        flex-wrap: wrap;
+
+        li {
+            width: calc(100% / 3);
+            display: flex;
+            justify-content: end;
+            margin-bottom: 30px;
+
+            .item {
+                height: 150px;
+                width: 150px;
+                @include border-radius(150px);
+                background: #ECF0F3;
+                box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px #fff;
+                @include display-flex(flex, center, center);
+
+                img {
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    .hr-line {
+        display: block;
+        border-bottom: 1px solid #ACB3C6;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tech-item {
+        .btn-tag-group {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 20px;
+
+            a {
+                margin-right: 15px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .what-we-do {
+        background: url("../images/dashboard.png") no-repeat bottom right 20%;
+        background-size: 43%;
+        padding-bottom: 200px;
+        @media #{$laptop} {                
+            background: url("../images/dashboard.png") no-repeat center right 10%;
+            background-size: 43%;
+            padding-bottom: 0;
+        }
+        .web-product {
+            img {
+                max-width: 130px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media #{$xxl,$largescreen} {}
+
+    @media #{$laptop} {}
+
+    @media #{$md} {
+
+        .items-list {
+            justify-content: center;
+            margin-top: 50px;
+
+            li {
+                width: calc(100% / 4);
+                justify-content: center;
+            }
+        }
+
+        .what-we-do {
+            background: none;
+            background-size: 43%;
+            padding-bottom: 0px;
+
+            .web-product {
+                img {
+                    max-width: 130px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    @media #{$xs} {
+        .items-list {
+            justify-content: center;
+            margin-top: 30px;
+
+            li {
+                width: calc(100% / 2);
+                justify-content: center;
+
+                .item {
+                    height: 120px;
+                    width: 120px;
+                    @include border-radius(120px);
+
+                }
+            }
+        }
+
+        .what-we-do {
+            background: none;
+            background-size: 43%;
+            padding-bottom: 0px;
+
+            .web-product {
+                img {
+                    max-width: 130px;
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+//Section Working process
+.working-process {
+    background: url("../images/man-with-laptop.png") no-repeat top 10px right -60px;
+    background-size: 20%;
+
+    ul {
+        li {
+            width: calc((100% - 18px) / 5);
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            @media #{$md}{
+                width: calc((100% - 18px) / 3);
+                &:nth-child(3):after{
+                    display: none;
+                }
+            }
+
+            &:not(:last-child) {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: -50%;
+                    background: url("../images/bdr.png") no-repeat center right;
+                    background-size: 100%;
+                    height: 100%;
+                    width: 100%;
+                    z-index: -1;
+                }
+            }
+
+            span {
+                font-size: $font-16;
+                color: $theme-color;
+                font-weight: $type-semi-bold;
+                font-family: $font-inter;
+
+            }
+
+            .item {
+                height: 150px;
+                width: 150px;
+                -webkit-border-radius: 150px;
+                -moz-border-radius: 150px;
+                border-radius: 150px;
+                border-radius: 150px;
+                background: #ECF0F3;
+                box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px auto;
+
+                img {
+                    max-width: 50%
+                }
+            }
+
+            h5 {
+
+                font-size: 24px;
+                color: $theme-para;
+                font-weight: $type-semi-bold;
+                font-family: $font-inter;
+            }
+        }
+    }
+}
+
+//Section Get in Touch
+.get-in-touch {
+    position: relative;
+    background: url("../images/contact-bg.png") repeat;
+    padding-top: 150px !important;
+    padding-bottom:180px !important;
+    .hand{
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+        z-index: 3;
+        height: 50%;
+        width: 20%;
+        background: url("../images/hand.png") no-repeat bottom right -70px;
+        @media #{$laptop} {                
+            background: url("../images/hand.png") no-repeat bottom right -138px;
+        }
+    }
+    .white-box{
+        background: $white;
+        width: 300px;        
+        padding: 30px 25px;
+        text-align: center;
+        @include border-radius(40px);
+        @include box-shadow(0 0 80px 0 rgba(181,181,181,.40));    
+        h2{
+            font-size: 38px;
+            color: $theme-para;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+            padding-top: 15px;
+        }    
+         span{
+            color:#ACB3C6;
+         }
+        &.call-us{
+            position: absolute;
+            top:60%;
+            margin-top: -150px;
+            left: 45%;
+            z-index: 2;
+            @media #{$laptop} {                
+                top: 45%;
+            }
+        }
+        &.join-us{
+            position: absolute;
+            top:10%;
+            right:20%;
+            z-index: 2;
+            img{
+                max-width: 70%;
+            }
+            @media #{$xxl} {
+                right:12%;
+            }
+            @media #{$laptop} {
+                right:5%;
+            }
+        }
+        &.write-on{
+            position: absolute;
+            bottom:10%;
+            right:12%;
+            z-index: 2;
+        }
+    }
+    .img-right{
+        position: relative;
+        
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;    
+        z-index: 1;    
+        height: 100%;
+        width:100%;
+        background: url("../images/get-in-touch-line.png") no-repeat top 150px right -10px;
+        background-size: 62%;
+        @media #{$xxl} {         
+            background: url('../images/get-in-touch-line.png') no-repeat top 50% right -3px;
+            background-size: 65%;
+        }
+        @media #{$laptop} {         
+            background: url('../images/get-in-touch-line.png') no-repeat top 50% right -3px;
+            background-size: 65%;
+        }
+                    
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 45%;
+        right: 15%;
+        margin-top: -275px;
+        height: 600px;
+        width: 600px;        
+        background: $theme-color;
+        @include border-radius(100%);
+    }
+    
 }

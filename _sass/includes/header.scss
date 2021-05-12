@@ -34,7 +34,7 @@
         padding-right: 15px;
     }
 
-    & .navbar-brand{}
+
 
     .navbar-toggler {
         padding: 0;
@@ -42,7 +42,7 @@
         & .toggler-icon {
             width: 30px;
             height: 2px;
-            background-color: $theme-secondary;
+            background-color: $theme-color;
             display: block;
             margin: 5px 0;
             position: relative;
