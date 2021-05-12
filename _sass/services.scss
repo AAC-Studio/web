@@ -1,0 +1,44 @@
+.company-experience {
+    .box{
+        width: 240px;
+        height: 196px;
+        box-shadow: 5px 12px 48px #4AB4D317;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        span{
+            color: $theme-secondary;
+            font-size: 40px;
+            font-weight: $type-bold;
+        }
+        p{
+            color: $blue-color;
+            font-size: 20px;
+            font-weight: $type-semi-bold;
+            text-transform:$text-uppercase;
+        }
+    }
+}
+
+.graphic_design{
+    background-color: #ECF0F3;
+    li{
+        padding-right: 25px !important;
+        .item{
+            box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px #fff;
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 45px;
+            
+            img{
+                max-width: 25px;
+            }
+        }
+    }
+    
+}

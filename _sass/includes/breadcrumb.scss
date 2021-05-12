@@ -1,0 +1,63 @@
+
+/*===========================
+     Breadcrumb css 
+===========================*/
+.breadcrumb-bg-color{
+    background: transparent linear-gradient(102deg, #071539 0%, #0A3770 51%, #00599A 100%) 0% 0% no-repeat padding-box;
+
+    img{
+        top: 41px;
+        left: 326px;
+        opacity: 15%;
+        max-width: 300px;
+        @media #{$xxl} {
+            top: 39px;
+            left: 84px;
+        }
+        @media#{$laptop}{
+            top: 37px;
+            left: 8px;
+        }
+        @media #{$md}{
+            top: 40px;
+            left: 0px;
+            opacity: 15%;
+            max-width: 300px;
+        }
+        @media #{$sm} {
+            top: 121px;
+        }
+        @media screen and (min-width:320px) and (max-width:600px){
+            display: none;
+        }
+    }
+     .breadcrumb{
+        background-color: transparent;
+        display: inherit;
+        padding: 50px 0px;
+        font-size: 20px;
+        @media #{$sm} {
+            padding: 20px 0px;
+        }
+        .active{
+            color: $white;
+        }
+        h1{
+            color:$white;
+            font-weight: $type-bold;
+        }
+        .breadcrumb-item{
+            display: inline-block;
+            a{
+                color:$white;
+                font-size: 20px;   
+            }
+        }      
+    }
+    .breadcrumb-item+.breadcrumb-item::before {
+        display: inline-block;
+        padding-right: .5rem;
+        color: $white;
+        content: "/";
+    }
+}
