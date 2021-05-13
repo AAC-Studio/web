@@ -52,3 +52,5 @@ $(window).scroll(function() {
   }
 });
 $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$("body").offset().top},"1000");return false})})
+
+

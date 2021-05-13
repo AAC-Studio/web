@@ -8,6 +8,17 @@
         flex-wrap: wrap;
         align-content: center;
         justify-content: center;
+        @media #{$md}{
+            width: 313px;
+        }
+        @media #{$xs} {
+            width: 328px;
+        }
+        h3{
+            color: $theme-secondary;
+            font-size: 40px;
+            font-weight: $type-bold;
+        }
         span{
             color: $theme-secondary;
             font-size: 40px;
@@ -21,24 +32,222 @@
         }
     }
 }
+.services-design {
+    h3 {
+        font-size: 42px;
+        color: $theme-color;
+        font-weight: $type-bold;
+        font-family: $font-inter;
 
-.graphic_design{
-    background-color: #ECF0F3;
-    li{
-        padding-right: 25px !important;
-        .item{
-            box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px #fff;
-            width: 65px;
-            height: 65px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 45px;
-            
-            img{
-                max-width: 25px;
+        @media #{$xs} {
+            font-size: 28px;
+        }
+    }
+    p {
+        padding: 20px 0;
+        color: #160C24;
+        font-family: $font-work-sans;
+    }
+    .items-list{
+        li{
+            padding-right: 4px !important;
+            padding-bottom: 25px;
+            padding-left: 10px;
+            .item{
+                box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px #fff;
+                width: 65px;
+                height: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 45px;
+                
+                img{
+                    max-width: 25px;
+                }
             }
         }
     }
-    
+}
+.graphic_design{
+    background-color: #ECF0F3;
+    .ui-ux{
+        background: url('../images/service-cartton-1.png') no-repeat right 16% top 50%;
+        background-size: 545px;
+        @media #{$xxl} {
+            background: url('../images/service-cartton-1.png') no-repeat right 8% top 50%;
+            background-size: 545px;
+        }
+        @media #{$laptop} {
+            background: url('../images/service-cartton-1.png') no-repeat right -5% top 50%;
+            background-size: 545px;
+        }
+        
+        @media #{$md} ,#{$sm} , #{$xs} {
+            background: none;
+        }
+    }
+}
+
+.web_design_development{
+    .web-design{
+        background: url('../images/service-cartton-2.svg') no-repeat left 20% top 40%;
+        background-size: 800px;
+        @media #{$xxl} {
+            background: url('../images/service-cartton-2.svg') no-repeat left 2% top 40%;
+            background-size: 800px;
+        }
+        @media #{$laptop} {
+            background: url('../images/service-cartton-2.svg') no-repeat left -10% top 40%;
+            background-size: 800px;
+        }
+        @media #{$lg} {
+            background: url('../images/service-cartton-2.svg') no-repeat left -30% top 40%;
+            background-size: 800px;
+        }
+        @media #{$md} ,#{$sm} , #{$xs} {
+            background: none;
+        }
+    }  
+}
+.digital_marketing_seo{
+    background-color: #ECF0F3;
+    .digital-marketing{
+        background: url("../images/service-cartton-3.svg") no-repeat right 22% top 23%;
+        background-size: 678px;
+        @media #{$xxl} {
+            background: url("../images/service-cartton-3.svg") no-repeat right 12% top 35%;
+            background-size: 660px;
+        }
+        @media #{$laptop} {
+            background: url("../images/service-cartton-3.svg") no-repeat right -3% top 23%;
+            background-size: 678px;
+        }
+        @media #{$lg} {
+            background: url("../images/service-cartton-3.svg") no-repeat right -3% top 23%;
+            background-size: 737px;
+        }
+        @media #{$md} ,#{$sm} , #{$xs} {
+            background: none;
+        }
+    }  
+}
+.development_operation{
+    &.section{
+        @media #{$md} ,#{$sm} , #{$xs}{
+            padding: 0px;
+        }
+    }
+    .development{
+        background: url("../images/service-cartton-4.png") no-repeat left 11% top 40%;
+        background-size: 767px;
+        @media #{$xxl} {
+            background: url('../images/service-cartton-4.png') no-repeat left 2% top 40%;
+            background-size: 767px;
+        }
+        @media #{$laptop} {
+            background: url('../images/service-cartton-4.png') no-repeat left -10% top 40%;
+            background-size: 767px;
+        }
+        @media #{$lg} {
+            background: url('../images/service-cartton-4.png') no-repeat left -10% top 40%;
+            background-size: 700px;
+        }
+        @media #{$md} ,#{$sm} , #{$xs} {
+            background: none;
+        }
+    } 
+}
+
+.ready_to_get_started{
+    background: url("../images/service-form-bg.png") no-repeat left top;
+    background-size: 100%;
+    .ready{
+        background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 10%;
+        @media #{$xxl} {
+            background: url("../images/service-cartton-5.png") no-repeat right -300px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 20%;
+            background-size: 60% , 25%;
+        }
+        @media #{$laptop} {
+            background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 7%;
+            background-size: 55% , 25%;
+        }
+        @media #{$lg} {
+            background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 3%;
+            background-size: 62% , 25%;
+        }
+        @media #{$md} ,#{$sm} , #{$xs} {
+            background: none;
+            background-color: $blue-color;
+            padding-bottom: 0px;
+        }
+        .section{
+            padding: 200px 0px;
+            @media #{$laptop} {
+                padding:80px 0px;
+            }
+            @media #{$lg}{
+                padding: 44px 0px;
+            }
+            @media #{$md} ,#{$sm} , #{$xs} {
+               padding: 80px 0px;
+            }
+        }
+        h1{
+            color: $white;
+            font-weight: $type-bold;
+            @media #{$md} ,#{$sm} , #{$xs} {
+                font-size: 28px;
+            }
+        }
+        .lines{
+            display: flex;
+           
+            width: 40%;
+            span{
+                display: block;
+                background-color: $theme-secondary;
+                height:5px;
+                border-radius:10px;
+                
+                &:first-child{
+                    width: 100%;
+                }            
+                &:nth-child(2){
+                    width: 50%;
+                }            
+                &:nth-child(3){
+                    width: 25%;
+                }            
+                &:last-child{
+                    width: 15%;
+                }   
+                
+                &:not(:last-child){
+                    margin-right: 15px;
+                }   
+            }
+            @media #{$md} ,#{$sm} , #{$xs} {
+                width: 30%;
+            }
+        }
+        form{
+            .form-control-lg{
+                font-size: 16px;
+                
+            }
+            input::placeholder{
+                color: #ACB3C6;
+            }
+            .form-control{
+                font-size: 18px;
+                color: #ACB3C6;
+            }
+            .form-group{
+                margin-bottom:0px;
+            }
+        }
+
+
+    }
 }
