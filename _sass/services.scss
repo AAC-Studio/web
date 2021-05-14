@@ -163,22 +163,37 @@
     background: url("../images/service-form-bg.png") no-repeat left top;
     background-size: 100%;
     padding-bottom: 40px;
-    @media #{$lg} {
-        padding-bottom: 100px;
+    @media #{$xxl}{
+        padding-bottom: 24px;
     }
+    @media #{$laptop}{
+        background: url("../images/service-form-bg.png") no-repeat left top;
+        background-size: 120%;
+        padding-top: 50px;
+    }
+    @media #{$lg} {
+        background: url("../images/service-form-bg.png") no-repeat left top;
+        background-size: 140%;
+        padding-top: 50px;
+    }
+
     .ready{
-        background: url("../images/service-cartton-5.png") no-repeat right -300px top 90px , url("../images/service-form-round-line.png") no-repeat right 30% bottom 28%;
+        background: url("../images/service-cartton-5.png") no-repeat right -300px top 90px , url("../images/service-form-round-line.png") no-repeat right 30% bottom 8%;
         background-size: 50% , 20%;
+        @media screen and (min-width:1536px) and (max-width:1720px){
+            background: url("../images/service-cartton-5.png") no-repeat right -300px top 40px , url("../images/service-form-round-line.png") no-repeat right 34% bottom 6%;
+            background-size: 58% , 20%;
+        }
         @media #{$xxl} {
             background: url("../images/service-cartton-5.png") no-repeat right -300px top 40px , url("../images/service-form-round-line.png") no-repeat right 32% bottom 10%;
             background-size: 58% , 20%;
         }
         @media #{$laptop} {
-            background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 32% bottom 22%;
+            background: url("../images/service-cartton-5.png") no-repeat right -259px top 0px , url("../images/service-form-round-line.png") no-repeat right 32% bottom 20%;
             background-size: 55% , 25%;
         }
         @media #{$lg} {
-            background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 3%;
+            background: url("../images/service-cartton-5.png") no-repeat right -350px top 0px , url("../images/service-form-round-line.png") no-repeat right 28% bottom 20%;
             background-size: 62% , 25%;
         }
         @media #{$md} ,#{$sm} , #{$xs} {
@@ -188,15 +203,18 @@
         }
 
         .section{
-            padding: 200px 0px 0px 0px;
+            padding: 170px 0px 0px 0px;
+            @media screen and (min-width:1536px) and (max-width:1720px){
+                padding: 100px 0px 0px 0px;
+            }
             @media #{$xxl} {
-                padding: 40px 0px 0px 0px;
+                padding: 50px 0px 0px 0px;
             }
             @media #{$laptop} {
-                padding: 40px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
             }
             @media #{$lg}{
-                padding: 40px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
             }
             @media #{$md} ,#{$sm} , #{$xs} {
                 padding: 40px 0px 0px 0px;
@@ -240,7 +258,7 @@
             }
         }
         .form-design{
-            width: 509px;
+           
             height: 560px;  
             background: transparent linear-gradient(180deg, #D27326 0%, #F98910 27%, #FFDD00 100%) 0% 0% no-repeat padding-box;
             border-radius: 10px 300px 10px 90px;

@@ -120,4 +120,172 @@
 }
 .what-we-do{
     background-color: $services-bg-color;
+    .box-item {
+        margin: 0;
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        
+        li {
+            width: calc(100% / 2);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+            
+            @media #{$lg} {
+                width: calc(100% / 2);
+            }
+            @media #{$md} , #{$sm} {
+                width: calc(100% / 2);
+            }
+            @media #{$xs}{
+                width: calc(100% / 1);
+            }
+
+            .item {
+                width: 450px;
+                height: 500px;
+                padding:0px 50px;      
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                @include border-radius(69px);
+                background: transparent linear-gradient(139deg, #FFFFFF00 0%, #FFFFFFBD 78%, #FFFFFF 89%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+                @media #{$lg}{
+                    width: 400px;
+                }
+                @media #{$md}{
+                    width: 300px;
+                    height: 450px;
+                }
+                img {
+                    max-width: 30%;
+                }
+                h3{
+                    padding-top: 25px;
+                    color: $theme-color;
+                    font-weight: $type-bold;
+                    font-family: $font-inter;
+                    @media #{$md}{
+                        font-size: 20px;
+                    }  
+                }
+                p{
+                    padding-top: 10px;
+                    color: #1F2123;
+                    font-family: $font-work-sans;
+                    font-weight: $type-medium;
+                    font-size: 14px;
+                    @media #{$md} {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.digital-get-in-touch {
+    position: relative;
+    background-color: $services-bg-color;
+    padding-top: 150px !important;
+    padding-bottom:180px !important;
+    .hand{
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+        z-index: 3;
+        height: 50%;
+        width: 20%;
+        background: url("../images/hand.png") no-repeat bottom right -70px;
+        @media #{$laptop} {                
+            background: url("../images/hand.png") no-repeat bottom right -138px;
+        }
+    }
+    .white-box{
+        background: $white;
+        width: 300px;        
+        padding: 30px 25px;
+        text-align: center;
+        @include border-radius(40px);
+        @include box-shadow(0 0 80px 0 rgba(181,181,181,.40));    
+        h2{
+            font-size: 38px;
+            color: $theme-para;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+            padding-top: 15px;
+        }    
+         span{
+            color:#ACB3C6;
+         }
+        &.call-us{
+            position: absolute;
+            top:60%;
+            margin-top: -150px;
+            left: 45%;
+            z-index: 2;
+            @media #{$laptop} {                
+                top: 45%;
+            }
+        }
+        &.join-us{
+            position: absolute;
+            top:10%;
+            right:20%;
+            z-index: 2;
+            img{
+                max-width: 70%;
+            }
+            @media #{$xxl} {
+                right:12%;
+            }
+            @media #{$laptop} {
+                right:5%;
+            }
+        }
+        &.write-on{
+            position: absolute;
+            bottom:10%;
+            right:12%;
+            z-index: 2;
+        }
+    }
+    .img-right{
+        position: relative;
+        
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;    
+        z-index: 1;    
+        height: 100%;
+        width:100%;
+        background: url("../images/get-in-touch-line.png") no-repeat top 150px right -10px;
+        background-size: 62%;
+        @media #{$xxl} {         
+            background: url('../images/get-in-touch-line.png') no-repeat top 50% right -3px;
+            background-size: 65%;
+        }
+        @media #{$laptop} {         
+            background: url('../images/get-in-touch-line.png') no-repeat top 50% right -3px;
+            background-size: 65%;
+        }
+                    
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 45%;
+        right: 15%;
+        margin-top: -275px;
+        height: 600px;
+        width: 600px;        
+        background: $theme-color;
+        @include border-radius(100%);
+    }
+    
 }
