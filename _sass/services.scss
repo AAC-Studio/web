@@ -162,14 +162,19 @@
 .ready_to_get_started{
     background: url("../images/service-form-bg.png") no-repeat left top;
     background-size: 100%;
+    padding-bottom: 40px;
+    @media #{$lg} {
+        padding-bottom: 100px;
+    }
     .ready{
-        background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 10%;
+        background: url("../images/service-cartton-5.png") no-repeat right -300px top 90px , url("../images/service-form-round-line.png") no-repeat right 30% bottom 28%;
+        background-size: 50% , 20%;
         @media #{$xxl} {
-            background: url("../images/service-cartton-5.png") no-repeat right -300px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 20%;
-            background-size: 60% , 25%;
+            background: url("../images/service-cartton-5.png") no-repeat right -300px top 40px , url("../images/service-form-round-line.png") no-repeat right 32% bottom 10%;
+            background-size: 58% , 20%;
         }
         @media #{$laptop} {
-            background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 36% bottom 7%;
+            background: url("../images/service-cartton-5.png") no-repeat right -259px top 40px , url("../images/service-form-round-line.png") no-repeat right 32% bottom 22%;
             background-size: 55% , 25%;
         }
         @media #{$lg} {
@@ -179,18 +184,22 @@
         @media #{$md} ,#{$sm} , #{$xs} {
             background: none;
             background-color: $blue-color;
-            padding-bottom: 0px;
+            padding-bottom: 59px;
         }
+
         .section{
-            padding: 200px 0px;
+            padding: 200px 0px 0px 0px;
+            @media #{$xxl} {
+                padding: 40px 0px 0px 0px;
+            }
             @media #{$laptop} {
-                padding:80px 0px;
+                padding: 40px 0px 0px 0px;
             }
             @media #{$lg}{
-                padding: 44px 0px;
+                padding: 40px 0px 0px 0px;
             }
             @media #{$md} ,#{$sm} , #{$xs} {
-               padding: 80px 0px;
+                padding: 40px 0px 0px 0px;
             }
         }
         h1{
@@ -202,7 +211,6 @@
         }
         .lines{
             display: flex;
-           
             width: 40%;
             span{
                 display: block;
@@ -231,22 +239,55 @@
                 width: 30%;
             }
         }
-        form{
-            .form-control-lg{
-                font-size: 16px;
-                
+        .form-design{
+            width: 509px;
+            height: 560px;  
+            background: transparent linear-gradient(180deg, #D27326 0%, #F98910 27%, #FFDD00 100%) 0% 0% no-repeat padding-box;
+            border-radius: 10px 300px 10px 90px;
+            @media #{$xs} {
+                border-radius: 10px 241px 10px 60px;
+                background: transparent linear-gradient(180deg, #D27326 0%, #F98910 27%, #FFDD00 100%) 0% 0% no-repeat padding-box;
+                width: 340px;
+                height: auto;
             }
-            input::placeholder{
-                color: #ACB3C6;
-            }
-            .form-control{
-                font-size: 18px;
-                color: #ACB3C6;
-            }
-            .form-group{
-                margin-bottom:0px;
+            form{
+                padding: 40px 80px;
+                @media #{$xs} {
+                    padding:40px 40px;
+                }
+                .form-control-lg{
+                    font-size: 16px;
+                    
+                }
+                label{
+                    padding: 15px 0px;
+                }
+                input{
+                    border-bottom: 2px solid $white;
+                    border-radius: 0px;
+                    padding-left: 0px;
+                    padding-bottom: 25px;
+
+                }
+                input::placeholder{
+                    color:$white;
+                    
+                }
+                .form-control{
+                    font-size: 16px;
+                    color: $white;
+                    background-color:  transparent;
+                    border-top-color: transparent;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+
+                }
+                .form-group{
+                    margin-bottom:0px;
+                }
             }
         }
+        
 
 
     }

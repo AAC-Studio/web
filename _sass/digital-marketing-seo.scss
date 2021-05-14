@@ -1,0 +1,123 @@
+.digital-marketing{
+    h3 {
+        font-size: 42px;
+        color: $theme-color;
+        font-weight: $type-bold;
+        font-family: $font-inter;
+
+        @media #{$xs} {
+            font-size: 28px;
+        }
+    }
+    p {
+        padding: 20px 0;
+        color: #1F2123;
+        font-family: $font-work-sans;
+    }
+}
+.technical-tools{
+    background-color: #ECF0F3;
+    .overview {
+        span{
+            color: $theme-secondary;
+            font-size: $font-20;
+            text-transform: $text-uppercase;
+            font-family: $font-inter;
+        }
+        h3{
+            padding-bottom: 15px;
+        }
+        p{
+            color: $theme-para;
+            font-family: $font-work-sans;
+        }
+        .lines{
+            display: flex;
+            width: 40%;
+            margin: 0 auto;
+            span{
+                display: block;
+                background-color: $theme-secondary;
+                height:5px;
+                border-radius:10px;
+                
+                &:first-child{
+                    width: 100%;
+                }            
+                &:nth-child(2){
+                    width: 50%;
+                }            
+                &:nth-child(3){
+                    width: 25%;
+                }            
+                &:last-child{
+                    width: 15%;
+                }   
+                
+                &:not(:last-child){
+                    margin-right: 15px;
+                }   
+            }
+            @media #{$sm}{
+                width: 40%;
+            }
+            @media #{$xs} {
+                width: 57%;
+            }
+        }
+    }
+    .items-list {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+            width: calc(100% / 6);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            @media #{$lg} {
+                width: calc(100% / 5);
+            }
+            @media #{$md} , #{$sm} {
+                width: calc(100% / 3);
+            }
+            @media #{$xs}{
+                width: calc(100% / 2);
+            }
+
+            .item {
+                height: 150px;
+                width: 150px;
+                @include border-radius(150px);
+                background: #ECF0F3;
+                box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px $white;
+                @include display-flex(flex, center, center);
+                img {
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
+.digital-marketing-parts {
+    img{
+        max-width: 1100px;
+        @media #{$lg}{
+            max-width: 900px;
+        }
+        @media #{$md}{
+            max-width: 682px;
+        }
+        @media #{$sm}{
+            max-width: 500px;
+        }
+        @media screen and (min-width:320px) and (max-width:575px) {
+            max-width: 330px;
+        }
+    }
+}
+.what-we-do{
+    background-color: $services-bg-color;
+}
