@@ -1,20 +1,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 {% for js in site.data.scripts.jslist  %}
     <script src="{{ js.url }}"></script> 
-
-{% endfor %}
-<script>
-$(document).ready(function(){
-    $('.count').each(function () {
-           $(this).prop('Counter',0).animate({
-          Counter: $(this).text()
-      }, {
-          duration: 3000,
-          easing: 'swing',
-          step: function (now) {
-              $(this).text(Math.ceil(now));
-          }
-      });
-    });
-  })
-  </script>
+{% endfor %} 
+{% if page.parallax == true %}
+    <script src="assets/js/parallax.js"></script> 
+{% endif %}
