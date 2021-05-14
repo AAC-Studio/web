@@ -202,6 +202,14 @@
         @media #{$laptop} {                
             background: url("../images/hand.png") no-repeat bottom right -138px;
         }
+        @media #{$lg} {
+            position: absolute;
+            bottom: -21%;
+            right: -73px;
+            z-index: 3;
+            height: 54%;
+            width: 30%;
+        }
     }
     .white-box{
         background: $white;
@@ -212,7 +220,7 @@
         @include box-shadow(0 0 80px 0 rgba(181,181,181,.40));    
         h2{
             font-size: 38px;
-            color: $theme-para;
+            // color: $theme-para;
             font-weight: $type-bold;
             font-family: $font-inter;
             padding-top: 15px;
@@ -229,6 +237,9 @@
             @media #{$laptop} {                
                 top: 45%;
             }
+            @media #{$lg}{
+                left: 38%;
+            }
         }
         &.join-us{
             position: absolute;
@@ -243,6 +254,10 @@
             }
             @media #{$laptop} {
                 right:5%;
+            }
+            @media #{$lg}{
+                top: 5%;
+                right: 12%;
             }
         }
         &.write-on{
@@ -274,6 +289,10 @@
             background: url('../images/get-in-touch-line.png') no-repeat top 50% right -3px;
             background-size: 65%;
         }
+        @media #{$lg}{
+            background: url('../images/get-in-touch-line.png') no-repeat top 55% right -3px;
+            background-size: 69%;
+        }
                     
     }
     &::after{
@@ -286,6 +305,10 @@
         width: 600px;        
         background: $theme-color;
         @include border-radius(100%);
+        @media #{$lg}{
+            top: 50%;
+            right: 4%;
+        }
     }
     
 }
