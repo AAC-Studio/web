@@ -37,20 +37,34 @@
         padding: 50px 0px;
         font-size: 20px;
         @media #{$sm} {
-            padding: 20px 0px;
+            padding: 25px 0px;
+        }
+        @media #{$xs} {
+            padding: 25px 0px;
+            font-size: 16px;
         }
         .active{
             color: $white;
         }
-        h1{
+        h2{
             color:$white;
             font-weight: $type-bold;
+            font-size: 50px;
+            @media #{$sm} , #{$md} {
+                font-size: 32px;
+            }
+            @media #{$xs} {
+                font-size: 28px;
+            }
         }
         .breadcrumb-item{
             display: inline-block;
             a{
                 color:$white;
-                font-size: 20px;   
+                font-size: 20px; 
+                @media #{$xs} {
+                    font-size: 16px;
+                }  
             }
         }      
     }

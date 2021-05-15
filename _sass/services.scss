@@ -1,4 +1,9 @@
 .company-experience {
+    .section{
+        @media #{$xs} , #{$md}{
+            padding:30px 15px;
+        }
+    }
     .box{
         width: 240px;
         height: 196px;
@@ -40,20 +45,24 @@
         font-family: $font-inter;
 
         @media #{$xs} {
-            font-size: 28px;
+            font-size: 26px;
         }
     }
     p {
+        
         padding: 20px 0;
         color: #160C24;
         font-family: $font-work-sans;
+        @media #{$xs} {
+            padding: 5px 0px;
+        }
     }
     .items-list{
         li{
             padding-right: 4px !important;
             padding-bottom: 25px;
             padding-left: 10px;
-            .item{
+            .item1{
                 box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px #fff;
                 width: 65px;
                 height: 65px;
@@ -61,9 +70,17 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 45px;
+                 @media #{$xs} {
+                     width: 100px;
+                     height: 100px;
+                     border-radius: 50px;
+                 }
                 
                 img{
                     max-width: 25px;
+                    @media #{$xs} {
+                        max-width: 40px;
+                    }
                 }
             }
         }
@@ -72,6 +89,7 @@
 .graphic_design{
     background-color: #ECF0F3;
     .ui-ux{
+        
         background: url('../images/service-cartton-1.png') no-repeat right 16% top 50%;
         background-size: 545px;
         @media #{$xxl} {
@@ -86,7 +104,20 @@
         @media #{$md} ,#{$sm} , #{$xs} {
             background: none;
         }
+        .slider{
+            max-width: 312px;
+            .item1{
+                box-shadow: 7px 15px 25px #cad2e0, 0px 2px 23px #fff;
+            }
+        }
+        .section{
+            @media #{$xs} ,#{$md} {
+                padding:40px 0px;
+            }
+        }
+        
     }
+
 }
 
 .web_design_development{
@@ -107,6 +138,17 @@
         }
         @media #{$md} ,#{$sm} , #{$xs} {
             background: none;
+        }
+        .slider{
+            max-width: 312px;
+            .item1{
+                box-shadow: 7px 15px 25px #cad2e0, 0px 2px 23px #fff;
+            }
+        }
+        .section{
+            @media #{$xs} ,#{$md} {
+                padding:40px 0px;
+            }
         }
     }  
 }
@@ -129,6 +171,18 @@
         }
         @media #{$md} ,#{$sm} , #{$xs} {
             background: none;
+        }
+        .slider{
+            max-width: 312px;
+            .item1{
+                box-shadow: 7px 15px 25px #cad2e0, 0px 2px 23px #fff;
+
+            }
+        }
+        .section{
+            @media #{$xs} ,#{$md}{
+                padding:40px 0px;
+            }
         }
     }  
 }
@@ -156,6 +210,11 @@
         @media #{$md} ,#{$sm} , #{$xs} {
             background: none;
         }
+        .section{
+            @media #{$xs} , #{$md}{
+                padding:40px 0px;
+            }
+        }
     } 
 }
 
@@ -175,6 +234,9 @@
         background: url("../images/service-form-bg.png") no-repeat left top;
         background-size: 140%;
         padding-top: 50px;
+    }
+    @media #{$xs} ,#{$md} {
+        padding-bottom:0px;
     }
 
     .ready{
@@ -258,20 +320,29 @@
             }
         }
         .form-design{
-           
             height: 560px;  
             background: transparent linear-gradient(180deg, #D27326 0%, #F98910 27%, #FFDD00 100%) 0% 0% no-repeat padding-box;
             border-radius: 10px 300px 10px 90px;
+            @media #{$md} {
+                border-radius: 20px 20px 20px 20px;
+                height: 500px;
+            }
+            @media #{$sm}  {
+                border-radius: 20px 20px 20px 20px;
+            }
             @media #{$xs} {
-                border-radius: 10px 241px 10px 60px;
+                border-radius: 20px 20px 20px 20px;
                 background: transparent linear-gradient(180deg, #D27326 0%, #F98910 27%, #FFDD00 100%) 0% 0% no-repeat padding-box;
                 width: 340px;
                 height: auto;
             }
             form{
                 padding: 40px 80px;
-                @media #{$xs} {
-                    padding:40px 40px;
+                @media #{$md} {
+                    padding:0px 40px 40px 40px;
+                }
+                @media #{$xs}{
+                    padding:0px 40px 40px 40px;
                 }
                 .form-control-lg{
                     font-size: 16px;
@@ -305,8 +376,7 @@
                 }
             }
         }
-        
-
-
     }
 }
+
+ 

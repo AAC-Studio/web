@@ -4,6 +4,9 @@
 footer {
     padding-top: 80px;
     background-color: #fcfcfc;
+    @media #{$xs} {
+        padding-top:40px;
+    }
     .footer-logo{
         padding-bottom: 20px;
     }
