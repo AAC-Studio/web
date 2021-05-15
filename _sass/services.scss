@@ -1,6 +1,9 @@
 .company-experience {
     .section{
-        @media #{$xs} , #{$md}{
+        @media #{$md}{
+            padding: 40px 15px;
+        }
+        @media #{$xs} ,#{$sm}{
             padding:30px 15px;
         }
     }
@@ -44,7 +47,7 @@
         font-weight: $type-bold;
         font-family: $font-inter;
 
-        @media #{$xs} {
+        @media #{$xs} ,#{$sm}, #{$md} {
             font-size: 26px;
         }
     }
@@ -171,6 +174,11 @@
         }
         @media #{$md} ,#{$sm} , #{$xs} {
             background: none;
+        }
+        h3{
+            @media #{$md}{
+                font-size: 26px;
+            }
         }
         .slider{
             max-width: 312px;

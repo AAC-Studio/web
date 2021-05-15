@@ -1,4 +1,5 @@
 .digital-marketing{
+    
     h3 {
         font-size: 42px;
         color: $theme-color;
@@ -16,7 +17,9 @@
     }
 }
 .technical-tools{
-    background-color: #ECF0F3;
+    background-color: #ECF0F3 !important;
+        background: url("../images/service-cartton-3.svg") no-repeat top -140% right ;
+        background-size: 30%;
     .overview {
         span{
             color: $theme-secondary;
