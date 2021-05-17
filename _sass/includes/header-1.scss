@@ -1,0 +1,15 @@
+.header-1{
+    
+    background-color: $white;
+    &.sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        margin-top: 0;
+        @include animation(sticky 1s);
+        background-color: $white;
+        box-shadow: 0 4px 15px rgba(0, 0 ,0 , 15%);
+    }
+}
