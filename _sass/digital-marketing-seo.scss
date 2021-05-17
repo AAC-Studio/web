@@ -18,8 +18,27 @@
 }
 .technical-tools{
     background-color: #ECF0F3 !important;
-        background: url("../images/service-cartton-3.svg") no-repeat top -140% right ;
-        background-size: 30%;
+        
+        img{
+            right: 37px;
+            top: -192px;
+            max-width: 400px;
+            @media #{$xxl} {
+                right: 22px;
+            }
+            @media #{$laptop} {
+                right: 5px;
+                top: -133px;
+            }
+            @media #{$lg}{
+                right: 0px;
+                top: -266px;
+                max-width: 300px;
+            }
+            @media #{$md} , #{$sm} , #{$xs}{
+                display: none;
+            }
+        }
     .overview {
         span{
             color: $theme-secondary;
@@ -42,7 +61,7 @@
                 display: block;
                 background-color: $theme-secondary;
                 height:5px;
-                border-radius:10px;
+               @include border-radius(10px);
                 
                 &:first-child{
                     width: 100%;
@@ -95,7 +114,7 @@
                 width: 150px;
                 @include border-radius(150px);
                 background: #ECF0F3;
-                box-shadow: 15px 15px 25px #cad2e0, -15px -15px 25px $white;
+                box-shadow :15px 15px 25px#cad2e0, -15px -15px 25px $white;
                 @include display-flex(flex, center, center);
                 img {
                     max-width: 50%;
@@ -194,6 +213,11 @@
     background-color: $services-bg-color;
     padding-top: 150px !important;
     padding-bottom:180px !important;
+    @media #{$md} {
+        padding-bottom: 874px !important;
+        padding-top: 0px !important;
+    }
+    
     .hand{
         position: absolute;
         bottom: -20%;
@@ -208,11 +232,18 @@
         @media #{$lg} {
             position: absolute;
             bottom: -21%;
-            right: -73px;
+            right: 0px;
             z-index: 3;
             height: 54%;
             width: 30%;
         }
+        @media #{$md} {
+            bottom: -16%;
+            right: 0;
+            height: 50%;
+            width: 38%;
+        }
+        
     }
     .white-box{
         background: $white;
@@ -241,8 +272,16 @@
                 top: 45%;
             }
             @media #{$lg}{
-                left: 38%;
+                left: 36%;
+                top:54%;
             }
+            @media #{$md} {
+                top: 70%;
+                margin-top: 15px;
+                left: 4%;
+            }
+            
+   
         }
         &.join-us{
             position: absolute;
@@ -251,7 +290,11 @@
             z-index: 2;
             img{
                 max-width: 70%;
+                @media #{$xs} {
+                    max-width: 50%;
+                }
             }
+
             @media #{$xxl} {
                 right:12%;
             }
@@ -262,12 +305,22 @@
                 top: 5%;
                 right: 12%;
             }
+            @media #{$md} {
+                top: 50%;
+                right: 27%;
+            }
+            
         }
         &.write-on{
             position: absolute;
             bottom:10%;
             right:12%;
             z-index: 2;
+            @media #{$md} {
+                bottom: 2%;
+                right: 24%;
+            }
+            
         }
     }
     .img-right{
@@ -296,6 +349,9 @@
             background: url('../images/get-in-touch-line.png') no-repeat top 55% right -3px;
             background-size: 69%;
         }
+        @media #{$md} , #{$xs} {
+            display: none;
+        }
                     
     }
     &::after{
@@ -312,6 +368,49 @@
             top: 50%;
             right: 4%;
         }
+        @media #{$md} {
+            top:75%;
+        }
+        
     }
     
+}
+
+.digital-get-in-touch-mobile {
+    background-color: $services-bg-color;
+    h2{
+        @media #{$xs}{
+            font-size: 34px;
+        }
+    }
+    .white-box{
+        background: $white;
+        width: 300px;        
+        padding: 30px 25px;
+        text-align: center;
+        @include border-radius(40px);
+        @include box-shadow(0 0 80px 0 rgba(181,181,181,.40));  
+        display: block;
+        margin: 0 auto;
+
+        h2{
+            font-size: 38px;
+            // color: $theme-para;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+            padding-top: 15px;
+            @media #{$xs} {
+                font-size: 28px;
+            }
+        }    
+         span{
+            color:#ACB3C6;
+         }
+         &.join-us{
+             img{
+                 max-width: 50%;
+             }
+         }
+         
+    }
 }
