@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90.043" height="90" viewBox="0 0 90.043 90">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f77c0c"/>
+      <stop offset="1" stop-color="#ffbd22"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d27326"/>
+      <stop offset="0.272" stop-color="#f98910"/>
+      <stop offset="1" stop-color="#fd0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-0.108" y1="-0.388" y2="0.619" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#54a5ff"/>
+      <stop offset="1" stop-color="#8ad3fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.5" y1="0" x2="0.5" y2="1" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="web_marketing" data-name="web marketing" transform="translate(0)">
+    <path id="Path_1566" data-name="Path 1566" d="M85.118,41v3.529A10.588,10.588,0,0,1,74.529,55.118H21.588A10.588,10.588,0,0,1,11,44.529V41Z" transform="translate(-3.898 19)" fill="url(#linear-gradient)"/>
+    <path id="Path_1567" data-name="Path 1567" d="M85.118,52.294v7.059H11V27.588H32.176a7.059,7.059,0,0,0,7.059-7.059V17H74.529A10.588,10.588,0,0,1,84.5,24.059H65.706a7.059,7.059,0,0,0-7.059,7.059V45.235a7.059,7.059,0,0,0,7.059,7.059Z" transform="translate(-3.898 0.647)" opacity="0.46" fill="url(#linear-gradient-2)"/>
+    <path id="Path_1568" data-name="Path 1568" d="M27.765,49H45.412l1.765,14.118H26Z" transform="translate(7.573 25.118)" fill="#f88910"/>
+    <path id="Path_1569" data-name="Path 1569" d="M55.529,59.529H23.765a1.765,1.765,0,1,1,0-3.529H55.529a1.765,1.765,0,1,1,0,3.529Z" transform="translate(4.514 30.471)" fill="#fb9816"/>
+    <path id="Path_1570" data-name="Path 1570" d="M34.529,45.765A1.765,1.765,0,1,1,32.765,44,1.765,1.765,0,0,1,34.529,45.765Z" transform="translate(11.396 21.294)" fill="#f0f7fc"/>
+    <path id="Path_1571" data-name="Path 1571" d="M73.294,28.074V42.192a7.059,7.059,0,0,1-7.059,7.059H45.059A7.059,7.059,0,0,1,38,42.192V28.074a7.059,7.059,0,0,1,7.059-7.059c23.365,0,22.5-.318,24.706.953A7.059,7.059,0,0,1,73.294,28.074Z" transform="translate(16.749 3.691)" fill="url(#linear-gradient-3)"/>
+    <path id="Path_1572" data-name="Path 1572" d="M45,39.118V25l14.118,7.2Z" transform="translate(22.102 6.765)" fill="#f0f7fc"/>
+    <path id="Path_1573" data-name="Path 1573" d="M40.473,25.766A7.059,7.059,0,0,1,34.685,28.8H13.508A7.059,7.059,0,0,1,7.72,25.766l9.829-9.829a1.765,1.765,0,0,1,2.506,0l6.318,6.318a1.765,1.765,0,0,0,2.506,0l2.788-2.788a1.765,1.765,0,0,1,2.506,0Z" transform="translate(-6.406 -0.566)" fill="#f0f7fc"/>
+    <path id="Path_1574" data-name="Path 1574" d="M42.313,14.059c0,15.071.406,15.724-1.271,18.141l-6.3-6.3a1.765,1.765,0,0,0-2.506,0l-2.788,2.788a1.765,1.765,0,0,1-2.506,0l-6.318-6.318a1.765,1.765,0,0,0-2.506,0L8.289,32.2c-1.676-2.435-1.271-3.088-1.271-18.141A7.059,7.059,0,0,1,14.078,7H35.254A7.059,7.059,0,0,1,42.313,14.059Z" transform="translate(-6.976 -7)" fill="url(#linear-gradient-4)"/>
+    <ellipse id="Ellipse_199" data-name="Ellipse 199" cx="4.412" cy="4.412" rx="4.412" ry="4.412" transform="translate(19.455 5.294)" fill="#f0f7fc"/>
+    <path id="Path_1575" data-name="Path 1575" d="M44.235,30.529H17.765a1.765,1.765,0,0,1,0-3.529H44.235a1.765,1.765,0,0,1,0,3.529Z" transform="translate(-0.075 8.294)" fill="url(#linear-gradient-5)"/>
+    <path id="Path_1576" data-name="Path 1576" d="M44.235,34.529H17.765a1.765,1.765,0,0,1,0-3.529H44.235a1.765,1.765,0,0,1,0,3.529Z" transform="translate(-0.075 11.353)" fill="url(#linear-gradient-5)"/>
+    <path id="Path_1577" data-name="Path 1577" d="M37.176,38.529H17.765a1.765,1.765,0,0,1,0-3.529H37.176a1.765,1.765,0,0,1,0,3.529Z" transform="translate(-0.075 14.412)" fill="url(#linear-gradient-5)"/>
+  </g>
+</svg>

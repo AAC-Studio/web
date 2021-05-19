@@ -1,15 +1,17 @@
 //Section Home banner
 .home-banner {
     background: url("../images/laptop-on-desk.png") no-repeat center right 20%, url("../images/home-bg.svg") no-repeat bottom left;
-
     background-size: 50%, 100%;
     position: relative;
     z-index: 1;
-
+   
     .container {
         padding: 150px 0 150px;
         @media #{$md} {
             padding:120px 0 150px
+        }
+        @media #{$xs} {
+            padding:15px 15px 15px;
         }
     }
 
@@ -57,7 +59,7 @@
         background: url("../images/home-bg.svg") no-repeat top left;
         background-size: 125%;
         padding: 50px 0 50px;
-
+    
         .banner-left-text {
             padding: 100px 0;
             @media #{$md} {
@@ -371,7 +373,7 @@
             left: -10%;
             top: -8%;
         }        
-        @media #{$md} {
+        @media #{$md} , #{$xs} {
          display: none;
         }
     }
@@ -391,9 +393,9 @@
         @media #{$laptop} {            
             top: -6%;
         }
-        @media #{$md} {
+        @media #{$md} , #{$xs}{
             display: none;
-           }
+        }
     }
 
     @-webkit-keyframes mover {
@@ -548,7 +550,13 @@
 .working-process {
     background: url("../images/man-with-laptop.png") no-repeat top 10px right -60px;
     background-size: 20%;
-
+    @media #{$md} {
+        background-size: 29%;
+    }
+    @media #{$xs} {
+        background: url("../images/man-with-laptop.png") no-repeat top 43px right 2px;
+        background-size: 23%;
+    }
     ul {
         li {
             width: calc((100% - 18px) / 5);
@@ -558,6 +566,12 @@
             @media #{$md}{
                 width: calc((100% - 18px) / 3);
                 &:nth-child(3):after{
+                    display: none;
+                }
+            }
+            @media #{$xs} {
+                width: calc((100% - 18px) / 2);
+                &:nth-child(2):after , &:nth-child(4)::after{
                     display: none;
                 }
             }
@@ -599,7 +613,14 @@
                 margin: 20px auto;
 
                 img {
-                    max-width: 50%
+                    max-width: 50%;
+                    @media #{$xs}{
+                        max-width: 45%;
+                    }
+                }
+                @media #{$xs} {
+                    width: 135px;
+                    height: 135px;
                 }
             }
 
