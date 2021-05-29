@@ -93,14 +93,14 @@
     background-color: #ECF0F3;
     .ui-ux{
         
-        background: url('../images/service-cartton-1.png') no-repeat right 16% top 50%;
+        background: url('../images/ServiceCartton1.png') no-repeat right 16% top 50%;
         background-size: 545px;
         @media #{$xxl} {
-            background: url('../images/service-cartton-1.png') no-repeat right 8% top 50%;
+            background: url('../images/ServiceCartton1.png') no-repeat right 8% top 50%;
             background-size: 545px;
         }
         @media #{$laptop} {
-            background: url('../images/service-cartton-1.png') no-repeat right -5% top 50%;
+            background: url('../images/ServiceCartton1.png') no-repeat right -5% top 50%;
             background-size: 545px;
         }
         
@@ -125,18 +125,18 @@
 
 .web_design_development{
     .web-design{
-        background: url('../images/service-cartton-2.svg') no-repeat left 20% top 40%;
+        background: url('../images/ServiceCartton2.svg') no-repeat left 20% top 40%;
         background-size: 800px;
         @media #{$xxl} {
-            background: url('../images/service-cartton-2.svg') no-repeat left 2% top 40%;
+            background: url('../images/ServiceCartton2.svg') no-repeat left 2% top 40%;
             background-size: 800px;
         }
         @media #{$laptop} {
-            background: url('../images/service-cartton-2.svg') no-repeat left -10% top 40%;
+            background: url('../images/ServiceCartton2.svg') no-repeat left -10% top 40%;
             background-size: 800px;
         }
         @media #{$lg} {
-            background: url('../images/service-cartton-2.svg') no-repeat left -30% top 40%;
+            background: url('../images/ServiceCartton2.svg') no-repeat left -30% top 40%;
             background-size: 800px;
         }
         @media #{$md} ,#{$sm} , #{$xs} {
@@ -158,18 +158,18 @@
 .digital_marketing_seo{
     background-color: #ECF0F3;
     .digital-marketing{
-        background: url("../images/service-cartton-3.svg") no-repeat right 22% top 23%;
+        background: url("../images/ServiceCartton3.svg") no-repeat right 22% top 23%;
         background-size: 678px;
         @media #{$xxl} {
-            background: url("../images/service-cartton-3.svg") no-repeat right 12% top 35%;
+            background: url("../images/ServiceCartton3.svg") no-repeat right 12% top 35%;
             background-size: 660px;
         }
         @media #{$laptop} {
-            background: url("../images/service-cartton-3.svg") no-repeat right -3% top 23%;
+            background: url("../images/ServiceCartton3.svg") no-repeat right -3% top 23%;
             background-size: 678px;
         }
         @media #{$lg} {
-            background: url("../images/service-cartton-3.svg") no-repeat right -3% top 23%;
+            background: url("../images/ServiceCartton3.svg") no-repeat right -3% top 23%;
             background-size: 737px;
         }
         @media #{$md} ,#{$sm} , #{$xs} {
@@ -201,18 +201,18 @@
         }
     }
     .development{
-        background: url("../images/service-cartton-4.png") no-repeat left 11% top 40%;
+        background: url("../images/ServiceCartton4.png") no-repeat left 11% top 40%;
         background-size: 767px;
         @media #{$xxl} {
-            background: url('../images/service-cartton-4.png') no-repeat left 2% top 40%;
+            background: url('../images/ServiceCartton4.png') no-repeat left 2% top 40%;
             background-size: 767px;
         }
         @media #{$laptop} {
-            background: url('../images/service-cartton-4.png') no-repeat left -10% top 40%;
+            background: url('../images/ServiceCartton4.png') no-repeat left -10% top 40%;
             background-size: 767px;
         }
         @media #{$lg} {
-            background: url('../images/service-cartton-4.png') no-repeat left -10% top 40%;
+            background: url('../images/ServiceCartton4.png') no-repeat left -10% top 40%;
             background-size: 700px;
         }
         @media #{$md} ,#{$sm} , #{$xs} {
@@ -227,19 +227,19 @@
 }
 
 .ready_to_get_started{
-    background: url("../images/service-form-bg.png") no-repeat left top;
+    background: url("../images/ServiceFormBg.png") no-repeat left top;
     background-size: 100%;
     padding-bottom: 40px;
     @media #{$xxl}{
         padding-bottom: 24px;
     }
     @media #{$laptop}{
-        background: url("../images/service-form-bg.png") no-repeat left top;
+        background: url("../images/ServiceFormBg.png") no-repeat left top;
         background-size: 120%;
         padding-top: 50px;
     }
     @media #{$lg} {
-        background: url("../images/service-form-bg.png") no-repeat left top;
+        background: url("../images/ServiceFormBg.png") no-repeat left top;
         background-size: 140%;
         padding-top: 50px;
     }
@@ -248,22 +248,22 @@
     }
 
     .ready{
-        background: url("../images/service-cartton-5.png") no-repeat right -300px top 90px , url("../images/service-form-round-line.png") no-repeat right 30% bottom 8%;
+        background: url("../images/ServiceCartton5.png") no-repeat right -300px top 90px , url("../images/ServiceFormRoundLine.png") no-repeat right 30% bottom 8%;
         background-size: 50% , 20%;
         @media screen and (min-width:1536px) and (max-width:1720px){
-            background: url("../images/service-cartton-5.png") no-repeat right -300px top 40px , url("../images/service-form-round-line.png") no-repeat right 34% bottom 6%;
+            background: url("../images/ServiceCartton5.png") no-repeat right -300px top 40px , url("../images/ServiceFormRoundLine.png") no-repeat right 34% bottom 6%;
             background-size: 58% , 20%;
         }
         @media #{$xxl} {
-            background: url("../images/service-cartton-5.png") no-repeat right -300px top 40px , url("../images/service-form-round-line.png") no-repeat right 32% bottom 10%;
+            background: url("../images/ServiceCartton5.png") no-repeat right -300px top 40px , url("../images/ServiceFormRoundLine.png") no-repeat right 32% bottom 10%;
             background-size: 58% , 20%;
         }
         @media #{$laptop} {
-            background: url("../images/service-cartton-5.png") no-repeat right -259px top 0px , url("../images/service-form-round-line.png") no-repeat right 32% bottom 20%;
+            background: url("../images/ServiceCartton5.png") no-repeat right -259px top 0px , url("../images/ServiceFormRoundLine.png") no-repeat right 32% bottom 20%;
             background-size: 55% , 25%;
         }
         @media #{$lg} {
-            background: url("../images/service-cartton-5.png") no-repeat right -350px top 0px , url("../images/service-form-round-line.png") no-repeat right 28% bottom 20%;
+            background: url("../images/ServiceCartton5.png") no-repeat right -350px top 0px , url("../images/ServiceFormRoundLine.png") no-repeat right 28% bottom 20%;
             background-size: 62% , 25%;
         }
         @media #{$md} ,#{$sm} , #{$xs} {

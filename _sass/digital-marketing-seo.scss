@@ -238,9 +238,9 @@
         z-index: 3;
         height: 50%;
         width: 20%;
-        background: url("../images/hand.png") no-repeat bottom right -70px;
+        background: url("../images/Hand.png") no-repeat bottom right -70px;
         @media #{$laptop} {                
-            background: url("../images/hand.png") no-repeat bottom right -138px;
+            background: url("../images/Hand.png") no-repeat bottom right -138px;
         }
         @media #{$lg} {
             position: absolute;
@@ -348,18 +348,18 @@
         z-index: 1;    
         height: 100%;
         width:100%;
-        background: url("../images/get-in-touch-line.png") no-repeat top 150px right -10px;
+        background: url("../images/GetInTouchLine.png") no-repeat top 150px right -10px;
         background-size: 62%;
         @media #{$xxl} {         
-            background: url('../images/get-in-touch-line.png') no-repeat top 50% right -3px;
+            background: url('../images/GetInTouchLine.png') no-repeat top 50% right -3px;
             background-size: 65%;
         }
         @media #{$laptop} {         
-            background: url('../images/get-in-touch-line.png') no-repeat top 50% right -3px;
+            background: url('../images/GetInTouchLine.png') no-repeat top 50% right -3px;
             background-size: 65%;
         }
         @media #{$lg}{
-            background: url('../images/get-in-touch-line.png') no-repeat top 55% right -3px;
+            background: url('../images/GetInTouchLine.png') no-repeat top 55% right -3px;
             background-size: 69%;
         }
         @media #{$md} , #{$xs} {
