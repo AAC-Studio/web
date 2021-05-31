@@ -1,0 +1,372 @@
+.business-enquiry{
+    background: url("../images/ServiceCartton5.png") no-repeat right -300px top 90px , url("../images/RoundLine.png") no-repeat right 30% bottom 12%;
+        background-size: 50% , 17%;
+        background-color: #fafbfb;
+        .section{
+            @media #{$md} ,#{$xs} {
+                padding: 40px 15px;
+            }
+        }
+        @media screen and (min-width:1536px) and (max-width:1720px){
+            background: url("../images/ServiceCartton5.png") no-repeat right -300px top 40px , url("../images/RoundLine.png") no-repeat right 34% bottom 22%;
+            background-size: 58% , 17%;
+        }
+        @media #{$xxl} {
+            background: url("../images/ServiceCartton5.png") no-repeat right -300px top 90px , url("../images/RoundLine.png") no-repeat right 30% bottom 20%;
+            background-size: 58% , 17%;
+        }
+        @media #{$laptop} {
+            background: url("../images/ServiceCartton5.png") no-repeat right -259px top 90px , url("../images/RoundLine.png") no-repeat right 32% bottom 29%;
+            background-size: 58% , 17%;
+        }
+        @media #{$lg} {
+            background: url("../images/ServiceCartton5.png") no-repeat right -250px top 90px , url("../images/RoundLine.png") no-repeat right 29% bottom 36%;
+            background-size: 58% , 19%;
+        }
+        @media #{$md} ,#{$sm} , #{$xs} {
+            background: #fafbfb;
+           
+        }
+    .form-img{
+        background: url("../images/Paper2.png") no-repeat left  0px top 0px ;
+        background-size: 100% ;
+        padding: 70px 50px 157px 50px;
+        @media #{$xxl} , #{$laptop} {
+            background-size: 95%;
+            padding: 70px 80px 157px 50px;
+        }
+        @media #{$lg} {
+            padding: 70px 50px 92px 50px;
+        }
+        @media #{$md} {
+            background: url("../images/Paper2.png") no-repeat left  0px top 0px ;
+            background-size: 82% ;
+        }
+        @media #{$xs} {
+            background: none;
+            background-color: #efefef;
+            padding: 20px 0px 25px 0px;
+            @include border-radius(20px);
+        }
+        .form-design{
+            padding:20px;
+        }
+        h1{
+            color: $theme-color;
+            font-weight: $type-bold;
+            @media #{$md} ,#{$sm} , #{$xs} {
+                font-size: 28px;
+            }
+        }
+        .lines{
+            display: flex;
+            width: 40%;
+            span{
+                display: block;
+                background-color: $theme-secondary;
+                height:5px;
+                border-radius:10px;
+                
+                &:first-child{
+                    width: 100%;
+                }            
+                &:nth-child(2){
+                    width: 50%;
+                }            
+                &:nth-child(3){
+                    width: 25%;
+                }            
+                &:last-child{
+                    width: 15%;
+                }   
+                
+                &:not(:last-child){
+                    margin-right: 15px;
+                }   
+            }
+            @media #{$md} ,#{$sm} , #{$xs} {
+                width: 55%;
+            }
+        }
+        form{
+            .appearance-none { 
+                -webkit-appearance: none;
+                background: url("../images/ArrowDropdown.png") no-repeat top 15px right 20px;
+                background-size: 5%;
+            }
+            input::placeholder{
+                color:#707070;
+            }
+            .form-control{
+                font-size: 16px;
+                border:1px solid #ACB3C6;
+                color: #707070;
+                background-color: #fafbfb !important;
+                @media #{$xs} {
+                    font-size: 14px;
+                }
+                &textarea{
+                    font-size: 16px; 
+                    color: #707070;
+                    @media #{$xs} {
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+.section{
+    @media #{$xs}{
+        padding:40px 0px;
+    }
+}
+.contact-map{
+    background: url("../images/Dashline.png") no-repeat center center;
+    background-size: 100% ;
+    padding-bottom: 650px;
+    position: relative;
+    @media #{$xxl}{
+        padding-bottom: 475px;
+    }
+    @media #{$laptop}{
+        padding-bottom: 415px;
+    }
+    @media #{$lg}{
+        padding-bottom: 330px;
+    }
+    @media #{$md}{
+        padding-bottom: 270px;
+    }
+    @media #{$xs}{
+        padding-bottom: 132px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 12%;
+        top: 3%;
+        width: 69%;
+        height: 82%;
+        background: url("../images/HandSmartPhone2.png") no-repeat center center;
+        background-size: 80%;
+        @media #{$xs}{
+            content: "";
+            position: absolute;
+            right: 12%;
+            top: -5%;
+            width: 78%;
+            height: 112%;
+            background: url("../images/HandSmartPhone2.png") no-repeat center center;
+                background-size: auto;
+            background-size: 93%;
+        }
+    }
+}
+.contact-get-in-touch {
+    position: relative;
+    // background-color: $services-bg-color;
+    padding-top: 150px !important;
+    padding-bottom:180px !important;
+    @media #{$md} {
+        padding-bottom: 874px !important;
+        padding-top: 0px !important;
+    }
+    
+    .hand{
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+        z-index: 3;
+        height: 50%;
+        width: 20%;
+        background: url("../images/Hand.png") no-repeat bottom right -70px;
+        @media #{$laptop} {                
+            background: url("../images/Hand.png") no-repeat bottom right -138px;
+        }
+        @media #{$lg} {
+            position: absolute;
+            bottom: -21%;
+            right: 0px;
+            z-index: 3;
+            height: 54%;
+            width: 30%;
+        }
+        @media #{$md} {
+            bottom: -16%;
+            right: 0;
+            height: 50%;
+            width: 38%;
+        }
+        
+    }
+    .white-box{
+        background: $white;
+        width: 300px;        
+        padding: 30px 25px;
+        text-align: center;
+        @include border-radius(40px);
+        @include box-shadow(0 0 80px 0 rgba(181,181,181,.40));    
+        h2{
+            font-size: 38px;
+            // color: $theme-para;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+            padding-top: 15px;
+        }    
+         span{
+            color:#ACB3C6;
+         }
+        &.call-us{
+            position: absolute;
+            top:60%;
+            margin-top: -150px;
+            left: 45%;
+            z-index: 2;
+            @media #{$laptop} {                
+                top: 45%;
+            }
+            @media #{$lg}{
+                left: 36%;
+                top:54%;
+            }
+            @media #{$md} {
+                top: 70%;
+                margin-top: 15px;
+                left: 4%;
+            }
+            
+   
+        }
+        &.join-us{
+            position: absolute;
+            top:10%;
+            right:20%;
+            z-index: 2;
+            img{
+                max-width: 70%;
+                @media #{$xs} {
+                    max-width: 50%;
+                }
+            }
+
+            @media #{$xxl} {
+                right:12%;
+            }
+            @media #{$laptop} {
+                right:5%;
+            }
+            @media #{$lg}{
+                top: 5%;
+                right: 12%;
+            }
+            @media #{$md} {
+                top: 50%;
+                right: 27%;
+            }
+            
+        }
+        &.write-on{
+            position: absolute;
+            bottom:10%;
+            right:12%;
+            z-index: 2;
+            @media #{$md} {
+                bottom: 2%;
+                right: 24%;
+            }
+            
+        }
+    }
+    .img-right{
+        position: relative;
+        
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;    
+        z-index: 1;    
+        height: 100%;
+        width:100%;
+        background: url("../images/GetInTouchLine.png") no-repeat top 150px right -10px;
+        background-size: 62%;
+        @media #{$xxl} {         
+            background: url('../images/GetInTouchLine.png') no-repeat top 50% right -3px;
+            background-size: 65%;
+        }
+        @media #{$laptop} {         
+            background: url('../images/GetInTouchLine.png') no-repeat top 50% right -3px;
+            background-size: 65%;
+        }
+        @media #{$lg}{
+            background: url('../images/GetInTouchLine.png') no-repeat top 55% right -3px;
+            background-size: 69%;
+        }
+        @media #{$md} , #{$xs} {
+            display: none;
+        }
+                    
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 45%;
+        right: 15%;
+        margin-top: -275px;
+        height: 600px;
+        width: 600px;        
+        background: $theme-color;
+        @include border-radius(100%);
+        @media #{$lg}{
+            top: 50%;
+            right: 4%;
+        }
+        @media #{$md} {
+            top:75%;
+        }
+        
+    }
+    
+}
+
+.contact-get-in-touch-mobile {
+    // background-color: $services-bg-color;
+    h2{
+        @media #{$xs}{
+            font-size: 34px;
+        }
+    }
+    .white-box{
+        background: $white;
+        width: 300px;        
+        padding: 30px 25px;
+        text-align: center;
+        @include border-radius(40px);
+        @include box-shadow(0 0 80px 0 rgba(181,181,181,.40));  
+        display: block;
+        margin: 0 auto;
+
+        h2{
+            font-size: 38px;
+            // color: $theme-para;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+            padding-top: 15px;
+            @media #{$xs} {
+                font-size: 28px;
+            }
+        }    
+         span{
+            color:#ACB3C6;
+         }
+         &.join-us{
+             img{
+                 max-width: 50%;
+             }
+         }
+         
+    }
+}

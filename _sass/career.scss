@@ -82,15 +82,21 @@
                 }
             }
             form{
+                .appearance-none { 
+                    -webkit-appearance: none;
+                    background: url("../images/ArrowDropdown.png") no-repeat top 20px right 20px;
+                    background-size: 5%;
+                }
                 .form-group{
                     margin-bottom: 0px;
-                
+                    
                 }
                 .form-control{
                     font-size: 16px;
                     border:1px solid #ACB3C6;
                     color: #707070;
                     height: calc(1.5em + .75rem + 12px);
+                    background-color: #fafbfb !important;
                     @media #{$xs} {
                         font-size: 14px;
                     }
@@ -107,13 +113,87 @@
 }
 .job-position{
     background-color: #F2F7FB;
+    position: relative;
+    .sec-title{
+        h2{
+            @media #{$xs}{
+                font-size: 30px;
+            }
+        }
+    }
     .position-card{
-        img{
+        background: #FAFBFB 0% 0% no-repeat padding-box;
+        border: 1px solid #ACB3C6;
+        border-radius: 7px;
+        margin-bottom: 25px;
+        a{
+            text-decoration: none;
+            &:hover{
+                text-decoration: none;
+            }
+        .position-img{
             width: 107px;
             height: 111px;
             background: transparent linear-gradient(271deg, #071539 0%, #0A3770 35%, #00599A 100%) 0% 0% no-repeat padding-box;
-            border-radius: 0px 7px 7px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 7px 0px 0px 7px;
+            @media #{$xs}{
+                width: 85px;
+                height: 85px;
+            }
+            img{
+                max-width: 100px;
+                @media #{$xs}{
+                    max-width: 50px;
+                }
+             }
         }
+        .position-part{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 25px;
+            @media #{$xs}{
+                padding-left: 15px;
+            }
+           
+            h3{
+                font-size: 24px;
+                font-family: $font-inter;
+                color: #5A5752;
+                margin-bottom: 0px;
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+            }
+            p{
+                color: #1F2123;
+                font-family: $font-work-sans;
+                font-size: 16px;
+                margin-bottom: 0px;
+                font-weight: $type-medium;
+                @media #{$xs}{
+                    font-size: 13px;
+                }
+            }
+        }
+        .position-icon{
+            position: absolute;
+            top: 38px;
+            right: 25px;
+            @media #{$xs}{
+                top: 25px;
+                right: 15px;
+            }
+
+            i{
+                color: #707070;
+                font-size: 30px;
+            }
+        }
+    }
     }
 }
 .innovative{
@@ -121,6 +201,14 @@
     .section {
         @media #{$xs} {
             padding: 40px 15px 40px;
+
+        }
+        .sec-title{
+            h2{
+                @media #{$xs}{
+                    font-size: 30px;
+                }
+            }
         }
     }
     .box-item {
