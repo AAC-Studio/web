@@ -150,13 +150,14 @@
                     position: absolute;
                     transform: translateY(100%);
                     transition: 0.5s all ease-in;
-                    margin-top: 40px;
+                    margin-top: 60px;
                     text-align: center;
                     display: flex;
                     justify-content: center;
                     left: 0;
                     width: 100%;
-                   
+                    color: #2d629e;
+                    font-weight: 700;
                 }
             }
         }
@@ -398,7 +399,168 @@
     }
 }
 
+.ui-ux-project{
+    background-color: #f2f7f2;
+    .project{
+        padding-top: 200px;
+        padding-bottom: 300px;  
+        background: transparent linear-gradient(257deg, #F77C0C 0%, #FFBD22 100%) 0% 0% no-repeat padding-box;
+    }
+    
+    #blog-header-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: rotateX(180deg);
+    }
+    @media #{$md} {
+        .banner-left-text {
+            // padding: 100px 0;
+            // @media #{$md} {
+            //     padding: 0 !important;
+            // }
+            .sub-title {
+                color: $white;
+                font-size: $font-16;
+                font-weight: $type-regular;
+                font-family: $font-inter;
+                text-transform: $text-uppercase;
+            }
 
+            h1 {
+                color: $theme-color;
+                font-size: 35px;
+                font-weight: $type-bold;
+                font-family: $font-inter;
+            }
+
+            p {
+                width: 80%;
+                color: $white;
+                font-size: $font-16;
+                font-weight: $type-regular;
+                font-family: $font-work-sans;
+            }
+        }
+    }
+
+    @media #{$xs} {
+
+        .banner-left-text {
+            // padding: 100px 0;
+
+            .sub-title {
+                font-size: $font-14 !important;
+            }
+
+            h1 {
+                font-size: 35px !important;
+            }
+
+            p {
+                width: 100% !important;
+                font-size: $font-14 !important;
+            }
+        }
+    }
+
+    .banner-left-text {
+        // padding: 100px 0;
+
+        .sub-title {
+            color: $white;
+            font-size: $font-20;
+            font-weight: $type-regular;
+            font-family: $font-inter;
+            text-transform: $text-uppercase;
+        }
+
+        h1 {
+            color: $theme-color;
+            font-size: 55px;
+            font-weight: $type-bold;
+            font-family: $font-inter;
+        }
+
+        p {
+            width: 80%;
+            color: $white;
+            font-size: $font-20;
+            font-weight: $type-regular;
+            font-family: $font-work-sans;
+        }
+    }
+    #blog-foot-svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: rotateY(180deg);
+    }
+    .blog-img{
+        position: relative;
+        width: 90%;
+        top: 35px;
+        img{
+            width: 100%;
+        }
+        .blog-img-slide{
+            width: 100%;
+            display: inline-block;
+            img{
+                width: 88%;
+                position: absolute;
+                left: 47.5%;
+                top: 36%;
+                transform: translate(-50%, -50%);
+                border: 6px solid transparent;
+            }
+        }
+    }
+    .owl-nav{
+        display: block !important;
+        
+        bottom: 57% !important;
+    }
+    .owl-prev, .owl-next {
+        position: absolute;
+        top: 46%;
+        height: 100%;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background: transparent;
+        color: #fff;
+        width: 25px;
+        line-height: 27px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        font-size: 19px;
+        padding: 15px;
+        @media #{$xs}{
+            top:102%;
+        }
+    }
+    
+    .owl-prev {
+        left: -73px;
+        @media #{$xs}{
+            left: 120px;
+        }
+    }
+    
+    .owl-next {
+        right: -73px;
+        @media #{$xs}{
+            right: 120px;
+        }
+    }
+    
+
+}
 
 .form-ready-to{
     background: url("../images/ServiceCartton5.png") no-repeat right -300px top 90px , url("../images/RoundLine.png") no-repeat right 30% bottom 12%;
